@@ -1,4 +1,5 @@
-import { faCompass, faHouse, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faCompass } from '@fortawesome/free-regular-svg-icons';
 
 export const navbar = [
     {
