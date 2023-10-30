@@ -1,28 +1,28 @@
-import { faCompass, faEnvelope, faHouse, faHouseMedical, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faCompass, faHouse, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export const navbar = [
     {
         name: 'Tất Cả Sản Phẩm',
         link: 'tat-ca-san-pham',
         icon: faHouse,
-        parent: []
+        parent: [],
     },
     {
         name: 'Đang Follow',
         link: 'dang-follow',
         icon: faUserGroup,
-        parent: []
+        parent: [],
     },
     {
         name: 'Khám phá',
         link: 'kham-pha',
         icon: faCompass,
-        parent: []
+        parent: [],
     },
     {
         name: 'LIVE',
         link: 'live',
         icon: faVideo,
-        parent: []
-    }
-]
+        parent: [],
+    },
+];
