@@ -1,0 +1,10 @@
+.navbar-note::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 8px;
+    right: 8px;
+    background: rgba(22, 24, 35, 0.12);
+    transform: scaleY(0.5);
+    top: 0;
+}

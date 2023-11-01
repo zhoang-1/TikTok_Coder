@@ -1,11 +1,13 @@
 import React from 'react';
 // import { useState } from 'react';
+import SlideShow from './SlideShow';
+import './Wrapper.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { navbar } from '../../utils/navbar';
 import { faIgloo } from '@fortawesome/free-solid-svg-icons';
+
 // import { slideShow } from '../../utils/navbar';
-import SlideShow from './SlideShow';
 
 function Wrapper() {
     return (
@@ -13,7 +15,7 @@ function Wrapper() {
             <div className="navbar-toolbar border-box text-[18px] leading-[24px] font-semibold mb-[8px]">
                 <ul>
                     {navbar.map((main) => (
-                        <li className="border-box flex flex-row items-center rounded-[4px] p-[8px] ">
+                        <li className="border-box flex flex-row items-center rounded-[4px] p-[8px] hover:cursor-pointer hover:bg-slate-100 font-serif">
                             <Link to={`${main.link}`}>
                                 <FontAwesomeIcon icon={main.icon} className=" border-box text-[20px] mr-[10px] " />
                                 {main.name}
@@ -22,8 +24,8 @@ function Wrapper() {
                     ))}
                 </ul>
             </div>
-            <div className="navbar-note border-box px-[8px] pt-[20px] pb-[26px] ">
-                {/* before:content-['-'] before:absolute h-[1px] before:l-[8px] before:r-[8px] before:bg-[rgba(22, 24, 35, .12)]  */}
+            <div className="navbar-note border-box px-[8px] pt-[20px] pb-[26px] relative ">
+                {/* before:content-[''] before:absolute h-[1px] before:l-[8px] before:r-[8px] before:t-0 before:scale-x-50 before:bg-[rgba(22, 24, 35, .12)]  */}
                 <div className="note">
                     <p>Đăng nhập để follow các tác giả, thích video và xem bình luận.</p>
                 </div>
@@ -43,7 +45,7 @@ function Wrapper() {
                             src="https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/045b2fc7c278b9a30dd0.png"
                             alt="create Effect"
                         />
-                        <div className="absolute  px-[10px] p-[10px] flex justify-center font-semibold text-lg text-red-700 items-center">
+                        <div className="absolute  px-[10px] p-[10px] flex justify-center font-semibold text-lg text-black items-center">
                             <FontAwesomeIcon icon={faIgloo} className="" />
                             <span className="ml-[8px]">Create Effect</span>
                         </div>

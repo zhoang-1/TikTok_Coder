@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className="body border-box mx-0 mt-auto">
+            <div className="container border-box mx-0 mt-auto relative">
                 <div className="container flex flex-row border-none pl-[8px] pt-[20px] pt-[26px]">
                     <Wrapper />
                     <SlideShow />

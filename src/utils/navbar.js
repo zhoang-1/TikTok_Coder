@@ -1,10 +1,10 @@
 import { faHouse, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons';
-import { faCompass } from '@fortawesome/free-regular-svg-icons';
+import { faCompass, faUser } from '@fortawesome/free-regular-svg-icons';
 
 export const navbar = [
     {
-        name: 'Tất Cả Sản Phẩm',
-        link: 'tat-ca-san-pham',
+        name: 'Dành cho bạn',
+        link: 'danh-cho-ban',
         icon: faHouse,
         parent: [],
     },
@@ -24,6 +24,12 @@ export const navbar = [
         name: 'LIVE',
         link: 'live',
         icon: faVideo,
+        parent: [],
+    },
+    {
+        name: 'Hồ sơ',
+        link: 'ho-so',
+        icon: faUser,
         parent: [],
     },
 ];
